@@ -63,6 +63,15 @@ body {
     grid-row: span 3;
 }
 
+.logo {
+    display: flex;
+    gap: .5rem;
+}
+
+.logo img{
+    width: 1rem;
+}
+
 .sidebar ul {
     font-size: 16px;
 }
