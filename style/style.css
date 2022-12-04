@@ -64,6 +64,16 @@ body {
     grid-row: span 3;
     padding: 1rem;
     color: white;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 3rem;
+}
+
+.menus {
+    grid-row: span 2;
+    display: grid;
+    grid-template-rows: auto auto 2fr;
+    gap: 3rem;
 }
 
 .sidebar img {
@@ -71,7 +81,7 @@ body {
 }
 
 .logo {
-    display: flex;
+    grid-row: 1 / 2;
     position: relative;
 }
 
@@ -89,11 +99,15 @@ body {
     font-size: 1.5rem;
     position: relative;
     left: .5rem;
+    display: grid;
+    gap: 1rem;
 }
 
 li {
     display: flex;
-    gap: .5rem;
+    font-size: 16px;
+    font-weight: bold;
+    gap: 1rem;
 }
 
 li img {
