@@ -72,11 +72,18 @@ body {
 }
 
 .searchbar {
+    display: flex;
+    align-items: center;
 
 }
+.header img {
+    border-radius: 50%;
+}
+
 
 .nav {
-
+    display: flex;
+    align-items: center;
 }
 
 .projects {
