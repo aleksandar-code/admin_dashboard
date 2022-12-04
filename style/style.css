@@ -251,3 +251,36 @@ li img {
   font-size: 18px;
   text-align: left;
 }
+
+.announcements .card {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: #FFFFFF;
+    padding: 1rem;
+    border-radius: 7px;
+
+}
+
+.announcements {
+    position: relative;
+    display: grid;
+}
+
+.info::after {
+    content: '';
+    display: block;
+    border: 1px gray dotted;
+}
+
+.info:nth-child(3):after {
+    content: '';
+    display: block;
+    border: none;
+}
+
+.announcements .title{
+   position: absolute;
+   top: 10px;
+}
