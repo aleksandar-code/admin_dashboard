@@ -47,7 +47,7 @@ table {
 }
 
 body {
-    background-color: pink;
+    background-color: rgb(226, 232, 240);
     height: 100vh;
 }
 
@@ -56,24 +56,41 @@ body {
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
     grid-template-rows: 1fr 3fr 3fr;
+    gap: 1rem;
 }
 
 .sidebar {
-    background-color: aqua;
+    background-color: rgb(25, 146, 212);
     grid-row: span 3;
+    padding: 1rem;
 }
 
 .logo {
     display: flex;
-    gap: .5rem;
+    position: relative;
+}
+
+.logo h2 {
+    position: absolute;
+    left: 2rem;
+    top: .2rem;
 }
 
 .logo img{
-    width: 1rem;
+    width: 2rem;
 }
 
 .sidebar ul {
-    font-size: 16px;
+    font-size: 1.5rem;
+}
+
+li {
+    display: flex;
+    gap: .5rem;
+}
+
+li img {
+    width: 1.5rem;
 }
 
 .header {
@@ -83,9 +100,14 @@ body {
 .searchbar {
     display: flex;
     align-items: center;
-
 }
-.header img {
+
+.searchbar img {
+    width: 1rem;
+}
+
+.header .user-img {
+    width: 50px;
     border-radius: 50%;
 }
 
